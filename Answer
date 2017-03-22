@@ -1,0 +1,62 @@
+1. Why MapReduce program is needed in Pig Programming?
+
+          * Pig’s programming language referred to as Pig Latin is a coding approach that provides high degree of abstraction for MapReduce
+     programming but is a procedural code not declarative.
+          * Pig is written in Java and allows for developers to write User Defined functions in Java that leverage Java Libraries. So, we 
+     can call Pig Latin a second-class language in MapReduce.
+     
+2. Advantages of pig over MapReduce : 
+
+          *	Decrease in development time. This is the biggest advantage especially considering map-reduce jobs' complexity, time-spent 
+     and maintenance of the programs.
+          *	Learning curve is not steep.
+          *	Procedural, not declarative unlike SQL, so easier to follow the commands and provides better expressiveness in the
+     transformation of data every step. Also, you could control of the execution of every step. If you want to write your own
+     UDF(User Defined Function) and inject in one specific part in the pipeline, it is straightforward.
+          *	In Python or Java, you create the control structures(for loop and ifs) and get the data transformation as a side effect. In 
+     here, data and because of data, data transformation is a first class citizen. Without data, you cannot create for loops, you need to
+     always transform and manipulate data. 
+          *	Enjoys everything that Hadoop offers, parallelization, fault-tolerancy with many relational database features.
+          *	It is quite effective for unstructured and messy large datasets. Actually, Pig is one of the best tool to make the large
+     unstructured data to structured.
+          *	You have UDFs which you want to parallellize and utilize for large amounts of data, then you are in luck. Use Pig as a base
+     pipeline where it does the hard work and you just apply your UDF in the step that you want.
+     
+3. Pig Engine and its Importance :
+           Pig engine is an interpreter between Pig Latin Script and MapReduce jobs. It creates an environment to Pig scripts into series
+      of MapReduce jobs in parallel manner.
+
+4. The modes of Pig execution :
+           You can run Apache Pig in two modes, namely, Local Mode and HDFS mode.
+
+             1) Local Mode :
+                      In this mode, all the files are installed and run from your local host and local file system. There is no need of 
+                Hadoop or HDFS. This mode is generally used for testing purpose.
+
+             2) MapReduce Mode :
+                      MapReduce mode is where we load or process the data that exists in the Hadoop File System (HDFS) using Apache Pig.
+                In this mode, whenever we execute the Pig Latin statements to process the data, a MapReduce job is invoked in the back-end
+                to perform a particular operation on the data that exists in the HDFS.
+                
+5. Grunt shell in Pig :
+              You can run Apache Pig in interactive mode using the Grunt shell. In this shell, you can enter the Pig Latin statements and
+          get the output. 
+              After invoking the Grunt shell, you can run your Pig scripts in the shell. In addition to that, there are certain useful
+          shell and utility commands provided by the Grunt shell.
+          
+6. Features of Pig Latin language :-
+          •	It provides many operators to perform operations like join, sort, filer, etc.
+          •	Pig Latin is similar to SQL and it is easy to write a Pig script if you are good at SQL.
+          •	The tasks in Apache Pig optimize their execution automatically, so the programmers need to focus only on semantics of the
+         language.
+          •	Using the existing operators, users can develop their own functions to read, process, and write data.
+          •	Pig provides the facility to create User-defined Functions in other programming languages such as Java and invoke or embed
+         them in Pig Scripts.
+          •	Apache Pig analyzes all kinds of data, both structured as well as unstructured. It stores the results in HDFS.
+          
+7. Is Pig latin commands case sensitive? 
+             No,Pig Latin is not case sensitive language. Only the relation names and the file name should be case sensitive.        
+             
+8.  Data flow language :-             
+             In computer programming, dataflow programming is a programming language that models a program as a directed graph of the
+         data flowing between operations, thus implementing dataflow principles and architecture.
